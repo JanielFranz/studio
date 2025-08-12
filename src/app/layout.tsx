@@ -17,7 +17,7 @@ export default function RootLayout({
   const navLinks = [
     { href: "/about", label: "About" },
     { href: "/works", label: "Works" },
-    { href: "/#contact", label: "Contact" },
+    { href: "/contact", label: "Contact" },
   ];
 
   const socialLinks = [

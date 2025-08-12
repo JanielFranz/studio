@@ -44,18 +44,6 @@ export default function Home() {
             </Button>
         </div>
       </section>
-      
-      <section id="contact" className="container mx-auto px-6 py-24 mb-12">
-          <div className="bg-card/80 rounded-lg p-12 text-center shadow-sm">
-              <h2 className="text-3xl font-light mb-4 tracking-wide">Get In Touch</h2>
-              <p className="max-w-2xl mx-auto text-muted-foreground mb-8 leading-relaxed text-balance">
-                  Have a project in mind or want to collaborate? I&apos;d love to hear from you.
-              </p>
-              <Button asChild size="lg">
-                  <a href="mailto:contact@markusbernhardt.com">contact@markusbernhardt.com</a>
-              </Button>
-          </div>
-      </section>
     </main>
   );
 }
