@@ -20,7 +20,10 @@ export default function Home() {
         </h1>
       </section>
 
-      <section id="works" className="container mx-auto px-6 py-8">
+      <section className="container mx-auto px-6 py-8">
+        <div className="text-center mb-8">
+            <h2 className="text-3xl font-light tracking-wide">Featured Work</h2>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {photos.map((photo, index) => (
             <div key={index} className="group relative overflow-hidden rounded-md shadow-sm">
@@ -34,6 +37,11 @@ export default function Home() {
               />
             </div>
           ))}
+        </div>
+         <div className="text-center mt-8">
+            <Button asChild>
+                <Link href="/works">View All Works</Link>
+            </Button>
         </div>
       </section>
       
