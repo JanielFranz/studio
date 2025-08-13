@@ -34,7 +34,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"></link>
       </head>
       <body className="font-body antialiased bg-background text-foreground flex flex-col min-h-dvh">
-        <header className="sticky top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm shadow-sm">
+        <header className="sticky top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm ">
           <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
             <Link href="/" className="text-lg font-bold tracking-wider uppercase hover:text-sidebar-foreground transition-colors">
               Janiel Franz
@@ -58,15 +58,8 @@ export default function RootLayout({
         </div>
 
         <footer className="w-full bg-secondary/50 mt-auto">
-          <div className="container mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground mb-4 sm:mb-0">&copy; {new Date().getFullYear()} Markus Bernhardt. All rights reserved.</p>
-            <div className="flex items-center space-x-6">
-              {socialLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+          <div className="container mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-center">
+            <p className="text-sm text-muted-foreground mb-4 sm:mb-0">&copy; {new Date().getFullYear()} Janiel Franz. All rights reserved.</p>
           </div>
         </footer>
         <Toaster />

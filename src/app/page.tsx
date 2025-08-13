@@ -16,14 +16,11 @@ export default function Home() {
     <main className="flex-grow">
       <section id="hero" className="container mx-auto px-6 py-24 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-light max-w-4xl mx-auto leading-tight text-balance">
-            SKILLED SOFTWARE ENGINEER CRAFTING INNOVATIVE SOLUTIONS WITH PRECISION AND PASSION, BALANCING LOGIC AND CREATIVITY WITH THE DISCIPLINE OF A KICKBOXING FIGHTER
+            SOFTWARE ENGINEER BLENDING INNOVATION, PRECISION, CREATIVITY, AND KICKBOXING DISCIPLINE
         </h1>
       </section>
 
       <section className="container mx-auto px-6 py-8">
-        <div className="text-center mb-8">
-            <h2 className="text-3xl font-light tracking-wide">Featured Work</h2>
-        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {photos.map((photo, index) => (
             <div key={index} className="group relative overflow-hidden rounded-md shadow-sm">

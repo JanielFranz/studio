@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ContactPage() {
   const socialLinks = [
     { href: "#", label: "Instagram" },
-    { href: "#", label: "Linkedin" },
+    { href: "https://www.linkedin.com/in/janiel-franz-escalante-baygorrea-a00ab6290/", label: "Linkedin" },
   ];
 
   return (
