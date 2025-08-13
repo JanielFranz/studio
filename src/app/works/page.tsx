@@ -4,21 +4,16 @@ import Link from "next/link";
 export default function WorksPage() {
   const mainProject = {
     title: "Triphasik Platform",
-    src: "https://placehold.co/1200x800.png",
-    alt: "Portrait of a man with rose petals",
-    hint: "man portrait",
-    details: "Web App for a high performance gym",
+    src: "https://placehold.co/800x800.png",
+    alt: "Triphasik image",
+    hint: "triphasik platform",
+    details: "Web App",
     year: "2025",
   };
 
   const otherProjects = [
-    { src: 'https://placehold.co/600x400.png', alt: 'Woman looking over shoulder', hint: 'woman portrait', title: 'SKC' },
-    { src: 'https://placehold.co/600x800.png', alt: 'Person covered with a sheet', hint: 'abstract portrait', title: 'Hidden Form' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Two faces close together', hint: 'couple portrait', title: 'Intimacy' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Man in profile', hint: 'man profile', title: 'Side Profile' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Illustrated woman with flower', hint: 'illustration portrait', title: 'Flower Girl' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Illustrated woman', hint: 'illustration portrait', title: 'Contemplation' },
-  ];
+    { src: 'https://placehold.co/400x400.png', alt: 'Woman looking over shoulder', hint: 'woman portrait', title: 'SKC' },
+      ];
 
   return (
     <main className="flex-grow">
@@ -28,20 +23,21 @@ export default function WorksPage() {
             <Image
               src={mainProject.src}
               alt={mainProject.alt}
-              width={1200}
+              width={800}
               height={800}
-              className="w-full h-auto object-cover rounded-md"
+              className="w-fit h-auto object-cover rounded-md"
               data-ai-hint={mainProject.hint}
               priority
             />
           </div>
-          <div className="flex justify-between items-end">
+            <div className="flex justify-end items-end">
             <div>
               <h2 className="text-lg font-bold">{mainProject.title}</h2>
               <p className="text-sm text-muted-foreground">{mainProject.details}</p>
               <p className="text-sm text-muted-foreground">Year: {mainProject.year}</p>
             </div>
-            <Link href="#" className="text-sm font-medium hover:underline">View Project</Link>
+            {/*TODO:
+            {/*<Link href="#" className="text-sm font-medium hover:underline">View Project</Link>*/}
           </div>
         </div>
 
@@ -52,9 +48,9 @@ export default function WorksPage() {
                     <Image
                         src={project.src}
                         alt={project.alt}
-                        width={600}
+                        width={400}
                         height={400}
-                        className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                        className="w-fit h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                         data-ai-hint={project.hint}
                     />
                 </div>

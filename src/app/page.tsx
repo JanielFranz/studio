@@ -14,31 +14,26 @@ export default function Home() {
 
   return (
     <main className="flex-grow">
-      <section id="hero" className="container mx-auto px-6 py-24 text-center">
+      <section id="hero" className="container mx-auto px-6 py-14 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-light max-w-4xl mx-auto leading-tight text-balance">
             SOFTWARE ENGINEER BLENDING INNOVATION, PRECISION, CREATIVITY, AND KICKBOXING DISCIPLINE
         </h1>
       </section>
 
-      <section className="container mx-auto px-6 py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {photos.map((photo, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-md shadow-sm">
+      <section className="container mx-auto px-6 py-0 lg:py-2">
+        <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12">
+          {photos.slice(0, 3).map((photo, index) => (
+            <div key={index} className="group relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-black/10 bg-muted">
               <Image
                 src={photo.src}
                 alt={photo.alt}
-                width={600}
-                height={photo.height}
-                className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                 data-ai-hint={photo.hint}
               />
             </div>
           ))}
-        </div>
-         <div className="text-center mt-8">
-            <Button asChild>
-                <Link href="/works">View All Works</Link>
-            </Button>
         </div>
       </section>
     </main>
