@@ -36,15 +36,15 @@ export default function RootLayout({
       <body className="font-body antialiased bg-background text-foreground flex flex-col min-h-dvh">
         <header className="sticky top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm shadow-sm">
           <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-            <Link href="/" className="text-lg font-bold tracking-wider uppercase hover:text-accent transition-colors">
-              Markus Bernhardt
+            <Link href="/" className="text-lg font-bold tracking-wider uppercase hover:text-sidebar-foreground transition-colors">
+              Janiel Franz
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm uppercase tracking-widest hover:text-accent transition-colors"
+                  className="text-sm uppercase tracking-widest hover:text-sidebar-foreground transition-colors"
                 >
                   {link.label}
                 </Link>

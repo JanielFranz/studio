@@ -5,7 +5,7 @@ export default function AboutPage() {
     <main className="flex-grow">
       <section className="container mx-auto px-6 py-24 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-5xl mx-auto leading-tight text-balance uppercase">
-          Markus Bernhardt is an award-winning photographer capturing modern stories with minimalist precision, blending clean aesthetics and timeless emotion to create striking, story-driven visuals.
+          I'M A DEDICATED SOFTWARE ENGINEER CRAFTING INNOVATIVE SOLUTIONS WITH PRECISION AND CREATIVITY — WHILE MASTERING DISCIPLINE, POWER, AND STRATEGY AS A COMPETITIVE KICKBOXING FIGHTER.
         </h1>
       </section>
 
@@ -24,10 +24,10 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="text-sm tracking-widest uppercase text-muted-foreground">(About)</h2>
             <p className="text-foreground/80 leading-relaxed text-balance text-lg">
-              I&apos;m Markus Bernhardt, a Swiss visual artist with over ten years of experience creating refined, emotionally resonant images that connect on a deeply human level.
+              I&apos;m Janiel Franz, a Peruvian software engineer with expertise in creating robust, scalable solutions using Domain-Driven Design (DDD) and modern development practices
             </p>
             <p className="text-foreground/80 leading-relaxed text-balance text-lg">
-              My work lives at the intersection of art and authenticity. I specialize in capturing people, not just their appearance but their presence. Whether I&apos;m working with individuals, creatives, entrepreneurs, or brands, I strive to create images that hold depth, intention, and quiet strength.
+              I&apos;m currently doing an internship at Luz del Sur, where I apply both technical precision and creative problem-solving to deliver impactful software.
             </p>
           </div>
         </div>

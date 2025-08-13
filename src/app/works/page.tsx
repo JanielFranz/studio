@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export default function WorksPage() {
   const mainProject = {
-    title: "Vasilisa",
+    title: "Triphasik Platform",
     src: "https://placehold.co/1200x800.png",
     alt: "Portrait of a man with rose petals",
     hint: "man portrait",
-    details: "Weinbergstrasse 05, 8006 Zurich, Switzerland",
-    year: "2024",
+    details: "Web App for a high performance gym",
+    year: "2025",
   };
 
   const otherProjects = [
-    { src: 'https://placehold.co/600x400.png', alt: 'Woman looking over shoulder', hint: 'woman portrait', title: 'Serene Gaze' },
+    { src: 'https://placehold.co/600x400.png', alt: 'Woman looking over shoulder', hint: 'woman portrait', title: 'SKC' },
     { src: 'https://placehold.co/600x800.png', alt: 'Person covered with a sheet', hint: 'abstract portrait', title: 'Hidden Form' },
     { src: 'https://placehold.co/600x400.png', alt: 'Two faces close together', hint: 'couple portrait', title: 'Intimacy' },
     { src: 'https://placehold.co/600x400.png', alt: 'Man in profile', hint: 'man profile', title: 'Side Profile' },
