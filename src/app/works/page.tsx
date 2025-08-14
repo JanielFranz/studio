@@ -7,7 +7,7 @@ export default function WorksPage() {
   const { t } = useLanguage();
   const mainProject = {
     title: "Triphasik Platform",
-    src: "https://placehold.co/800x800.png",
+    src: "/triphasik.png",
     alt: "Triphasik image",
     hint: "triphasik platform",
     details: t('works.main.details'),
@@ -15,7 +15,7 @@ export default function WorksPage() {
   };
 
   const otherProjects = [
-    { src: 'https://placehold.co/400x400.png', alt: 'Woman looking over shoulder', hint: 'woman portrait', title: 'SKC' },
+    { src: '/sarria.png', alt: 'Woman looking over shoulder', hint: 'woman portrait', title: 'SKC' },
   ];
 
   return (
@@ -44,13 +44,13 @@ export default function WorksPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {otherProjects.map((project, index) => (
             <div key={index}>
-              <div className="group relative overflow-hidden rounded-md shadow-sm mb-4">
+              <div className="group relative overflow-hidden rounded-md mb-4">
                 <Image
                   src={project.src}
                   alt={project.alt}
                   width={400}
                   height={400}
-                  className="w-fit h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  className="w-fit h-full object-cover"
                   data-ai-hint={project.hint}
                 />
               </div>

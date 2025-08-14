@@ -7,11 +7,10 @@ export default function ContactPage() {
   const { t } = useLanguage();
 
   const socialLinks = [
+    { href: "https://github.com/JanielFranz", label: "Github" },
     { href: "https://www.instagram.com/janielfranzz?igsh=ZjYzY2ZhcTJ1eHlr", label: "Instagram" },
     { href: "https://www.linkedin.com/in/janiel-franz-escalante-baygorrea-a00ab6290/", label: "Linkedin" },
-    { href: "https://www.youtube.com/@janielarico", label: "Youtube" },
-    { href: "https://www.tiktok.com/@janielfranz?_t=ZS-8ysOkKtkNVf&_r=1", label: "TikTok" },
-  ];
+          ];
 
   return (
     <main className="flex-grow">
@@ -23,7 +22,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="container mx-auto px-6 pb-24">
+      <section className="container mx-auto px-6 pb-19">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <p className="text-lg font-bold">{t('contact.phone')}: +51 938172134</p>

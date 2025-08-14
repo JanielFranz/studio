@@ -72,7 +72,7 @@ export default function Navbar({ navLinks }: NavbarProps) {
               {t(link.i18nKey)}
             </Link>
           ))}
-                 </div>
+        </div>
       </div>
     </nav>
   );
