@@ -25,7 +25,7 @@ export default function ContactPage() {
       <section className="container mx-auto px-6 pb-19">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-lg font-bold font-display">{t('contact.email')}: contact@janielfranz.me</p>
+            <p className="text-lg font-bold font-display">{t('contact.email')}: <span className="text-foreground/80">contact@janielfranz.me </span></p>
             <p className="text-lg font-bold font-display">{t('contact.location')}</p>
           </div>
           <div>

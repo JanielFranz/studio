@@ -13,7 +13,8 @@ export default {
         body: ['"Anton"', 'sans-serif'],
         headline: ['"Anton"', 'sans-serif'],
         code: ['monospace'],
-        display: ['"Bebas Neue"', 'sans-serif'], // renombrado de nav a display
+        nav: ['"Bebas Neue"', 'sans-serif'],
+        display: ['Inter', 'sans-serif'], // renombrado de nav a display
       },
       colors: {
         background: 'hsl(var(--background))',
