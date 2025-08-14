@@ -13,11 +13,11 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-3 gap-12 items-center">
           <div>
             <Image
-              src="https://placehold.co/800x800.png"
+              src="/picture1.png"
               alt="Portrait of Markus Bernhardt"
               width={800}
               height={800}
-              className="w-full h-auto object-cover rounded-md"
+              className="w-full h-99 object-cover rounded-md"
               data-ai-hint="man photographer"
             />
           </div>

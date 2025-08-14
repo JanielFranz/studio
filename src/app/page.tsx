@@ -4,13 +4,10 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const photos = [
-    { src: 'https://placehold.co/600x800.png', height: 800, alt: 'Abstract building facade', hint: 'abstract architecture' },
-    { src: 'https://placehold.co/600x400.png', height: 400, alt: 'A minimalist interior scene', hint: 'minimalist interior' },
-    { src: 'https://placehold.co/600x600.png', height: 600, alt: 'Portrait of a person looking away', hint: 'person portrait' },
-    { src: 'https://placehold.co/600x400.png', height: 400, alt: 'City street at dusk', hint: 'city street' },
-    { src: 'https://placehold.co/600x800.png', height: 800, alt: 'Close-up of a plant with soft light', hint: 'plant detail' },
-    { src: 'https://placehold.co/600x400.png', height: 400, alt: 'Landscape with a single tree', hint: 'minimalist landscape' },
-  ];
+    { src: '/2.png', height: 800, alt: 'Abstract building facade', hint: 'abstract architecture' },
+    { src: '/3.png', height: 800, alt: 'A minimalist interior scene', hint: 'minimalist interior' },
+    { src: '/4.png', height: 800, alt: 'Portrait of a person looking away', hint: 'person portrait' },
+    ];
 
   return (
     <main className="flex-grow">
@@ -23,13 +20,13 @@ export default function Home() {
       <section className="container mx-auto px-6 py-0 lg:py-2">
         <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12">
           {photos.slice(0, 3).map((photo, index) => (
-            <div key={index} className="group relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-black/10 bg-muted">
+            <div key={index} className="group relative aspect-square overflow-hidden  shadow-md ring-1 ring-black/10 bg-muted">
               <Image
                 src={photo.src}
                 alt={photo.alt}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                className="object-cover "
                 data-ai-hint={photo.hint}
               />
             </div>
