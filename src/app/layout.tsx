@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar';
 import { LanguageProvider } from '@/i18n/LanguageProvider';
 
 export const metadata: Metadata = {
-  title: 'Franzfolio',
-  description: 'Award-Winning Photographer Capturing Modern Stories with Minimalist Precision',
+  title: 'Janiel Franz - Software Engineer',
+  description: 'Portfolio of Janiel Franz, a Software Engineer and Kickboxing fighter',
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <title>Franzfolio</title>
+        <title>Janiel Franz</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
