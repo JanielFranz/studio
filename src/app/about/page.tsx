@@ -17,11 +17,11 @@ export default function AboutPage() {
           <div>
             <Image
               src="/picture1.png"
-              alt="Portrait of Markus Bernhardt"
+              alt="janiel in suit"
               width={800}
               height={800}
               className="w-full h-99 object-cover rounded-md"
-              data-ai-hint="man photographer"
+              data-ai-hint="janiel in suit"
             />
           </div>
           <div className="space-y-6 md:col-span-2">

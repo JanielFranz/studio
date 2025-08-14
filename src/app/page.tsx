@@ -6,9 +6,9 @@ import { useLanguage } from "@/i18n/LanguageProvider";
 export default function Home() {
   const { t } = useLanguage();
   const photos = [
-    { src: '/2.png', height: 800, alt: 'Abstract building facade', hint: 'abstract architecture' },
-    { src: '/3.png', height: 800, alt: 'A minimalist interior scene', hint: 'minimalist interior' },
-    { src: '/4.png', height: 800, alt: 'Portrait of a person looking away', hint: 'person portrait' },
+    { src: '/2.png', height: 800, alt: 'janiel smiling', hint: 'janiel smilingv' },
+    { src: '/3.png', height: 800, alt: 'franz fighting', hint: 'franz fighting' },
+    { src: '/4.png', height: 800, alt: 'franz in upc', hint: 'franz in upc' },
     ];
 
   return (
