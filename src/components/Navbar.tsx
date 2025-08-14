@@ -11,7 +11,7 @@ interface NavbarProps {
 
 export default function Navbar({ navLinks }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t, toggle, locale } = useLanguage();
+  const { t, toggle } = useLanguage();
   const pathname = usePathname();
   const toggleMenu = () => setIsMenuOpen(o => !o);
 
@@ -21,7 +21,7 @@ export default function Navbar({ navLinks }: NavbarProps) {
   };
 
   return (
-    <nav className="container mx-auto px-6 py-4 flex justify-between items-center relative">
+    <nav className="font-display container mx-auto px-6 py-4 flex justify-between items-center relative">
       {/* Logo */}
       <div className="flex items-center gap-6">
         <Link href="/" className="text-lg font-bold tracking-wider uppercase hover:text-sidebar-foreground transition-colors relative">

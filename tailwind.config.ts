@@ -10,9 +10,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['"Anton"', 'sans-serif'],
+        headline: ['"Anton"', 'sans-serif'],
         code: ['monospace'],
+        display: ['"Bebas Neue"', 'sans-serif'], // renombrado de nav a display
       },
       colors: {
         background: 'hsl(var(--background))',

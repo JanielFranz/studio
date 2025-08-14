@@ -35,16 +35,16 @@ export default function WorksPage() {
           </div>
           <div className="block">
             <div className="min-[448px]:w-[400px] text-end">
-              <h2 className="text-lg font-bold">{mainProject.title}</h2>
-              <p className="text-sm text-muted-foreground">{mainProject.details}</p>
-              <p className="text-sm text-muted-foreground">{t('works.main.tech')}: {mainProject.tech}</p>
+              <h2 className="text-lg font-bold font-display">{mainProject.title}</h2>
+              <p className="text-sm text-muted-foreground font-display">{mainProject.details}</p>
+              <p className="text-sm text-muted-foreground font-display">{t('works.main.tech')}: {mainProject.tech}</p>
             </div>
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {otherProjects.map((project, index) => (
             <div key={index}>
-              <div className="group relative overflow-hidden rounded-md mb-4">
+              <div className="group relative overflow-hidden rounded-md mb-4 ">
                 <Image
                   src={project.src}
                   alt={project.alt}
@@ -54,7 +54,7 @@ export default function WorksPage() {
                   data-ai-hint={project.hint}
                 />
               </div>
-              <h3 className="font-bold">{project.title}</h3>
+              <h3 className="font-bold font-display">{project.title}</h3>
             </div>
           ))}
         </div>

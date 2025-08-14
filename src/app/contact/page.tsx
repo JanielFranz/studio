@@ -25,14 +25,14 @@ export default function ContactPage() {
       <section className="container mx-auto px-6 pb-19">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-lg font-bold">{t('contact.email')}: contact@janielfranz.me</p>
-            <p className="text-lg font-bold">{t('contact.location')}</p>
+            <p className="text-lg font-bold font-display">{t('contact.email')}: contact@janielfranz.me</p>
+            <p className="text-lg font-bold font-display">{t('contact.location')}</p>
           </div>
           <div>
-            <h2 className="text-sm tracking-widest uppercase text-muted-foreground mb-4">{t('contact.socials.label')}</h2>
+            <h2 className="text-sm tracking-widest uppercase text-muted-foreground mb-4 font-display">{t('contact.socials.label')}</h2>
             <div className="flex flex-col space-y-2">
               {socialLinks.map((link) => (
-                <Link key={link.label} href={link.href} className="text-lg font-bold hover:underline">
+                <Link key={link.label} href={link.href} className="text-lg font-bold hover:underline font-display">
                   {link.label}
                 </Link>
               ))}

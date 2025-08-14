@@ -25,11 +25,11 @@ export default function AboutPage() {
             />
           </div>
           <div className="space-y-6 md:col-span-2">
-            <h2 className="text-sm tracking-widest uppercase text-muted-foreground">{t('about.section.label')}</h2>
-            <p className="text-foreground/80 leading-relaxed text-balance text-lg">
+            <h2 className="text-sm tracking-widest uppercase text-muted-foreground font-display">{t('about.section.label')}</h2>
+            <p className="text-foreground/80 leading-relaxed text-balance text-lg font-display">
               {t('about.paragraph.1')}
             </p>
-            <p className="text-foreground/80 leading-relaxed text-balance text-lg">
+            <p className="text-foreground/80 leading-relaxed text-balance text-lg font-display">
               {t('about.paragraph.2')}
             </p>
           </div>
