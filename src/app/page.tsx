@@ -1,8 +1,10 @@
+'use client';
+
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export default function Home() {
+  const { t } = useLanguage();
   const photos = [
     { src: '/2.png', height: 800, alt: 'Abstract building facade', hint: 'abstract architecture' },
     { src: '/3.png', height: 800, alt: 'A minimalist interior scene', hint: 'minimalist interior' },
@@ -13,7 +15,7 @@ export default function Home() {
     <main className="flex-grow">
       <section id="hero" className="container mx-auto px-6 py-14 mt-5 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-black max-w-5xl mx-auto leading-tight text-balance">
-            SOFTWARE ENGINEER BLENDING INNOVATION, PRECISION, CREATIVITY, AND KICKBOXING DISCIPLINE
+          {t('home.hero.title')}
         </h1>
       </section>
 
