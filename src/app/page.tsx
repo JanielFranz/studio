@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <main className="flex-grow">
-      <section id="hero" className="container mx-auto px-6 py-14 text-center">
+      <section id="hero" className="container mx-auto px-6 py-14 mt-5 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-light max-w-4xl mx-auto leading-tight text-balance">
             SOFTWARE ENGINEER BLENDING INNOVATION, PRECISION, CREATIVITY, AND KICKBOXING DISCIPLINE
         </h1>

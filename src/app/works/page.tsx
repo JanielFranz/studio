@@ -16,26 +16,26 @@ export default function WorksPage() {
       ];
 
   return (
-    <main className="flex-grow">
-      <section className="container mx-auto px-6 py-12">
-        <div className="mb-12">
-          <div className="mb-4">
-            <Image
-              src={mainProject.src}
-              alt={mainProject.alt}
-              width={800}
-              height={800}
-              className="w-fit h-auto object-cover rounded-md"
-              data-ai-hint={mainProject.hint}
-              priority
-            />
-          </div>
-            <div className="flex justify-end items-end">
-            <div>
-              <h2 className="text-lg font-bold">{mainProject.title}</h2>
-              <p className="text-sm text-muted-foreground">{mainProject.details}</p>
-              <p className="text-sm text-muted-foreground">Year: {mainProject.year}</p>
+      <main className="flex-grow">
+        <section className="container mx-auto px-6 py-4 mt-6">
+          <div className="mb-12">
+            <div className="mb-4">
+              <Image
+                  src={mainProject.src}
+                  alt={mainProject.alt}
+                  width={800}
+                  height={800}
+                  className="w-fit h-auto object-cover rounded-md"
+                  data-ai-hint={mainProject.hint}
+                  priority
+              />
             </div>
+            <div className="block">
+              <div className="min-[448px]:w-[400px] text-end">
+                <h2 className="text-lg font-bold">{mainProject.title}</h2>
+                <p className="text-sm text-muted-foreground">{mainProject.details}</p>
+                <p className="text-sm text-muted-foreground">Year: {mainProject.year}</p>
+              </div>
             {/*TODO:
             {/*<Link href="#" className="text-sm font-medium hover:underline">View Project</Link>*/}
           </div>

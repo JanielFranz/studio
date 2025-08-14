@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main className="flex-grow">
-      <section className="container mx-auto px-6 py-10 text-center">
+      <section className="container mx-auto px-6 py-16 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-10xl mx-auto leading-tight text-balance uppercase">
           I'M A DEDICATED SOFTWARE ENGINEER CRAFTING INNOVATIVE SOLUTIONS — WHILE MASTERING DISCIPLINE, POWER, AND STRATEGY AS A COMPETITIVE KICKBOXING FIGHTER.
         </h1>
