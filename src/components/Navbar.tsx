@@ -96,14 +96,6 @@ export default function Navbar({ navLinks }: NavbarProps) {
               </Link>
             );
           })}
-          <button
-            onClick={() => { toggle(); setIsMenuOpen(false); }}
-            className="self-start mt-2 text-xs font-medium uppercase tracking-widest border px-3 py-1 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
-            aria-label={t('action.toggle-language-full')}
-          >
-            {t('action.toggle-language-full')}
-          </button>
-          <p className="text-[10px] text-muted-foreground tracking-wide">{locale === 'en' ? 'Interface in English' : 'Interfaz en Español'}</p>
         </div>
       </div>
     </nav>

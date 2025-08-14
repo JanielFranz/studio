@@ -25,7 +25,6 @@ export default function ContactPage() {
       <section className="container mx-auto px-6 pb-19">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-lg font-bold">{t('contact.phone')}: +51 938172134</p>
             <p className="text-lg font-bold">{t('contact.email')}: contact@janielfranz.me</p>
             <p className="text-lg font-bold">{t('contact.location')}</p>
           </div>

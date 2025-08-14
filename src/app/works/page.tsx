@@ -15,7 +15,7 @@ export default function WorksPage() {
   };
 
   const otherProjects = [
-    { src: '/sarria.png', alt: 'Woman looking over shoulder', hint: 'woman portrait', title: 'SKC' },
+    { src: '/sarria.png', alt: 'SKC project', hint: 'SKC project', title: 'SKC' },
   ];
 
   return (
