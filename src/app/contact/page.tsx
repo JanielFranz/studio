@@ -2,8 +2,11 @@ import Link from "next/link";
 
 export default function ContactPage() {
   const socialLinks = [
-    { href: "#", label: "Instagram" },
+    { href: "https://www.instagram.com/janielfranzz?igsh=ZjYzY2ZhcTJ1eHlr", label: "Instagram" },
     { href: "https://www.linkedin.com/in/janiel-franz-escalante-baygorrea-a00ab6290/", label: "Linkedin" },
+      { href: "https://www.youtube.com/@janielarico", label: "Youtube" },
+      { href: "https://www.tiktok.com/@janielfranz?_t=ZS-8ysOkKtkNVf&_r=1", label: "TikTok" },
+
   ];
 
   return (
@@ -20,7 +23,7 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-2 gap-12">
             <div>
                 <p className="text-lg font-bold">Phone: +51 938172134</p>
-                <p className="text-lg font-bold">Email: Markus@Bernhardt.Com</p>
+                <p className="text-lg font-bold">Email: contact@janielfranz.me</p>
                 <p className="text-lg font-bold">Based In Lima, Perú — Working Worldwide</p>
             </div>
             <div>

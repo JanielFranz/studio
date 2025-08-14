@@ -8,7 +8,7 @@ export default function WorksPage() {
     alt: "Triphasik image",
     hint: "triphasik platform",
     details: "Web App",
-    year: "2025",
+    tech: "NestJs, VueJs",
   };
 
   const otherProjects = [
@@ -34,7 +34,7 @@ export default function WorksPage() {
               <div className="min-[448px]:w-[400px] text-end">
                 <h2 className="text-lg font-bold">{mainProject.title}</h2>
                 <p className="text-sm text-muted-foreground">{mainProject.details}</p>
-                <p className="text-sm text-muted-foreground">Year: {mainProject.year}</p>
+                <p className="text-sm text-muted-foreground">Tech: {mainProject.tech}</p>
               </div>
             {/*TODO:
             {/*<Link href="#" className="text-sm font-medium hover:underline">View Project</Link>*/}
