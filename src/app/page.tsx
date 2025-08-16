@@ -6,35 +6,40 @@ import { useLanguage } from "@/i18n/LanguageProvider";
 export default function Home() {
   const { t } = useLanguage();
   const photos = [
-    { src: '/2.png', height: 800, alt: 'janiel smiling', hint: 'janiel smilingv' },
+    { src: '/2.png', height: 800, alt: 'janiel smiling', hint: 'janiel smiling' },
     { src: '/3.png', height: 800, alt: 'franz fighting', hint: 'franz fighting' },
-
-    ];
+  ];
 
   return (
-    <main className="flex-grow">
-      <section id="hero" className="container mx-auto px-6 py-14 mt-5 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black max-w-5xl mx-auto leading-tight text-balance">
-          {t('home.hero.title')}
-        </h1>
-      </section>
+    <main className="relative">
+      <div className="flex flex-col items-center w-full min-h-[calc(100dvh-170px)] px-6 pt-[clamp(3rem,10vh,6rem)] pb-12 gap-12 xl:justify-center transition-[padding]">
+        <section id="hero" className="max-w-5xl mx-auto text-center space-y-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-balance">
+            {t('home.hero.title')}
+          </h1>
+        </section>
 
-      <section className="container mx-auto px-6 py-0 lg:py-2">
-        <div className="mx-auto max-w-6xl flex flex-wrap justify-center gap-10 sm:gap-12">{/* centrado con flex */}
-          {photos.slice(0, 3).map((photo, index) => (
-            <div key={index} className="group relative w-60 sm:w-64 md:w-72 aspect-square overflow-hidden shadow-md ring-1 ring-black/10 bg-muted">
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                sizes="(max-width: 640px) 240px, (max-width: 768px) 256px, 288px"
-                className="object-cover"
-                data-ai-hint={photo.hint}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+        <section className="w-full flex justify-center">
+          <div className="flex flex-wrap justify-center gap-10 sm:gap-12 xl:gap-16 max-w-4xl">
+            {photos.map((photo, index) => (
+              <div
+                key={index}
+                className="group relative w-56 sm:w-60 md:w-64 xl:w-72 aspect-square overflow-hidden shadow-md ring-1 ring-black/10 bg-muted transition-all"
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 640px) 224px, (max-width: 768px) 240px, (max-width: 1024px) 256px, 288px"
+                  className="object-cover"
+                  data-ai-hint={photo.hint}
+                  priority
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

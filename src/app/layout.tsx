@@ -39,11 +39,11 @@ export default function RootLayout({
             <Navbar navLinks={navLinks} />
           </header>
 
-          <main className="flex-grow relative z-10">
+          <main className="flex-grow relative z-10 flex flex-col">{/* main vuelve a crecer para empujar footer al fondo */}
             {children}
           </main>
 
-          <footer className="w-full bg-secondary/50 mt-auto relative z-10">
+          <footer className="w-full bg-secondary/50 mt-auto relative z-10">{/* mt-auto para anclar al fondo */}
             <div className="container mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-center font-display">
               <p className="text-sm text-muted-foreground mb-4 sm:mb-0">&copy; {new Date().getFullYear()} Janiel Franz. All rights reserved.</p>
             </div>
