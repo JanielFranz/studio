@@ -8,7 +8,7 @@ export default function Home() {
   const photos = [
     { src: '/2.png', height: 800, alt: 'janiel smiling', hint: 'janiel smilingv' },
     { src: '/3.png', height: 800, alt: 'franz fighting', hint: 'franz fighting' },
-    { src: '/4.png', height: 800, alt: 'franz in upc', hint: 'franz in upc' },
+
     ];
 
   return (
@@ -20,15 +20,15 @@ export default function Home() {
       </section>
 
       <section className="container mx-auto px-6 py-0 lg:py-2">
-        <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12">
+        <div className="mx-auto max-w-6xl flex flex-wrap justify-center gap-10 sm:gap-12">{/* centrado con flex */}
           {photos.slice(0, 3).map((photo, index) => (
-            <div key={index} className="group relative aspect-square overflow-hidden  shadow-md ring-1 ring-black/10 bg-muted">
+            <div key={index} className="group relative w-60 sm:w-64 md:w-72 aspect-square overflow-hidden shadow-md ring-1 ring-black/10 bg-muted">
               <Image
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover "
+                sizes="(max-width: 640px) 240px, (max-width: 768px) 256px, 288px"
+                className="object-cover"
                 data-ai-hint={photo.hint}
               />
             </div>
